@@ -8,3 +8,5 @@
 {"level":"info","message":"GET /api/sessions 304 - 27ms","timestamp":"2025-12-19T18:26:01.513Z"}
 {"level":"info","message":"Fetched 41 events for session session_zfrqtq6dp_1766148068700","timestamp":"2025-12-19T18:26:05.836Z"}
 {"level":"info","message":"GET /api/events/session/session_zfrqtq6dp_1766148068700 200 - 32ms","timestamp":"2025-12-19T18:26:05.839Z"}
+{"level":"info","message":"Event created: 69459da50e468083e523cae1 type=click session=session_12345","timestamp":"2025-12-19T18:47:01.163Z"}
+{"level":"info","message":"POST /api/events 201 - 60ms","timestamp":"2025-12-19T18:47:01.169Z"}

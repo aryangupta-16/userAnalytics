@@ -2,28 +2,17 @@
 
 A full-stack user analytics application that tracks user interactions (page views, clicks) on a webpage, stores them in MongoDB, and displays them in a dashboard.
 
+## Live Demo
+
+- **Dashboard (Frontend)**: [https://user-analytics-eta.vercel.app/](https://user-analytics-eta.vercel.app/)
+- **Backend API**: [https://useranalytics-6fi8.onrender.com](https://useranalytics-6fi8.onrender.com)
+
 ## Tech Stack
 
 - **Backend**: Node.js, Express, Mongoose
-- **Database**: MongoDB
+- **Database**: MongoDB Atlas (Cloud Hosted)
 - **Frontend**: Next.js, React, Tailwind CSS
 - **Tracker**: Vanilla JavaScript
-
-## Project Structure
-
-```
-.
-├── client/             # Client-side tracker and demo page
-│   ├── tracker/        # Tracker script source
-│   └── public/         # Demo HTML page
-├── server/             # Node.js/Express Backend
-│   └── src/
-│       ├── modules/    # Feature modules (events, sessions, heatmap)
-│       └── ...
-├── dashboard/          # Next.js Frontend Dashboard
-│   └── app/            # App router pages and components
-└── docker-compose.yml  # Docker composition for MongoDB
-```
 
 ## Setup and Running
 
@@ -165,5 +154,4 @@ Retrieves click coordinates for a specific page URL.
 ### Trade-offs
 1.  **Monolithic Backend**: I chose a modular monolithic structure for the Node.js server. While microservices are popular, a modular monolith is easier to develop, test, and deploy for this scope.
 2.  **Polling vs. WebSockets**: The dashboard fetches data on load. Real-time updates via WebSockets (Socket.io) were omitted to keep complexity low, but would be a great addition for a "Live View".
-3.  **Client-side Tracking**: The tracker uses `fetch` or `navigator.sendBeacon`. `sendBeacon` is preferred for reliability on page unload, but we fallback to `fetch` if needed.
 4.  **No Authentication**: The dashboard is public. In a real scenario, we would implement auth (e.g., NextAuth.js) to protect the analytics data.
