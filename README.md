@@ -44,11 +44,15 @@ npm run dev
 ```
 The dashboard will be available at `http://localhost:3000`.
 
-### 4. Test Tracking
-Open the demo page in your browser:
-`client/public/demo.html`
-
-(Note: You may need to serve this file via a local server if you encounter CORS issues with `file://` protocol, although the server is configured to accept CORS. A simple way is `npx serve client/public` or `python3 -m http.server` inside `client/public`.)
+### 4. Start Client Demo App
+Navigate to the client directory and start the Next.js app:
+```bash
+cd client
+npm install
+npm run dev
+```
+The client demo app will be available at `http://localhost:3002`.
+Interact with the page (clicks, navigation) to generate events.
 
 ## API Documentation
 

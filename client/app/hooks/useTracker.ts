@@ -4,7 +4,7 @@ import { useEffect, useCallback } from 'react';
 import { usePathname, useSearchParams } from 'next/navigation';
 import { v4 as uuidv4 } from 'uuid';
 
-const API_URL = 'http://localhost:3001/api/events';
+const API_URL = 'https://useranalytics-6fi8.onrender.com/api/events';
 
 export const useTracker = () => {
     const pathname = usePathname();
