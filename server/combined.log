@@ -1,0 +1,2 @@
+{"level":"info","message":"Event created: 69458e249efd25952a75a541 type=click session=session_12345","timestamp":"2025-12-19T17:40:52.145Z"}
+{"level":"info","message":"POST /api/events 201 - 12ms","timestamp":"2025-12-19T17:40:52.148Z"}
